@@ -7,27 +7,80 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="ai-widget-container">
-    <button id="ai-toggle-btn" onclick="toggleAIChat()">🤖 Chat with Ngetich AI</button>
-    
-    <div id="ai-chat-window">
-        <div class="ai-header">
-            <div class="ai-avatar">🤖</div>
-            <div class="ai-meta">
-                <h3>Ngetich AI Core</h3>
-                <span>Online (Analyzing Site Data)</span>
+
+    <header>
+        <div class="nav-top">
+            <div class="logo">Ngetich</div>
+            <div class="nav-auth">
+                <button>Search</button>
+                <button>Login</button>
+                <button class="subscribe-btn">Subscribe</button>
             </div>
-            <button class="close-btn" onclick="toggleAIChat()">×</button>
         </div>
-        
-        <div id="ai-chat-messages" class="ai-body">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">POLITICS</a></li>
+                <li><a href="#">WORLD</a></li>
+                <li><a href="#">NATIONAL</a></li>
+                <li><a href="#">BUSINESS</a></li>
+                <li><a href="#">TECH</a></li>
+                <li><a href="#">OPINION</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="article-layout">
+            <div class="article-header">
+                <span class="meta-category">NATIONAL</span>
+                <h1>The Long Road to Recovery: Inside the City's Effort</h1>
+                <p class="article-deck">An in-depth analysis of the infrastructure, local funding milestones, and community shifts following recent policy changes.</p>
+                <div class="author-meta">
+                    <div class="author-img"></div>
+                    <div>
+                        <p class="author-name">By John Doe</p>
+                        <p class="meta-date">Updated 12 Feb 2026</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="article-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                <blockquote class="pull-quote">
+                    "This represents the single largest developmental shift our modern infrastructure setup has sustained over the last decade."
+                </blockquote>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+        </article>
+    </main>
+
+    <div id="ai-widget-container">
+        <button id="ai-toggle-btn" onclick="toggleAIChat()">🤖 Chat with Ngetich AI</button>
         
-        <div class="ai-footer">
-            <input type="text" id="ai-user-input" placeholder="Ask to summarize this page or ask a question..." onkeypress="handleAIPress(event)">
-            <button onclick="sendAIMessage()">➤</button>
+        <div id="ai-chat-window">
+            <div class="ai-header">
+                <div class="ai-avatar">🤖</div>
+                <div class="ai-meta">
+                    <h3>Ngetich AI Core</h3>
+                    <span>Online (Analyzing Site Data)</span>
+                </div>
+                <button class="close-btn" onclick="toggleAIChat()">×</button>
+            </div>
+            
+            <div id="ai-chat-messages" class="ai-body">
+                </div>
+            
+            <div class="ai-footer">
+                <input type="text" id="ai-user-input" placeholder="Ask to summarize this page..." onkeypress="handleAIPress(event)">
+                <button onclick="sendAIMessage()">➤</button>
+            </div>
         </div>
     </div>
-</div>
 
-<script src="ai.js"></script>
+    <script src="ai.js"></script>
+</body>
+</html>
