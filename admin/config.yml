@@ -1,15 +1,15 @@
 backend:
-  name: ngetichnews
-  repo: ngetichkpeter.github.io/ngetichnews
-  branch: main # Change to master if your branch is named master
+  name: github
+  repo: ngetichkpeter/ngetichnews
+  branch: main
 
-media_folder: "assets/images" # Where your uploaded photos will save
+media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
   - name: "news"
     label: "Daily News"
-    folder: "posts" # It will automatically create a "posts" folder for your news items
+    folder: "posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
