@@ -129,3 +129,30 @@
 
 </body>
 </html>
+    <div id="ai-widget-container">
+        <button id="ai-toggle-btn" onclick="toggleAIChat()">🤖 Chat with Ngetich AI</button>
+        
+        <div id="ai-chat-window">
+            <div class="ai-header">
+                <div class="ai-avatar">🤖</div>
+                <div class="ai-meta">
+                    <h3>Ngetich AI Core</h3>
+                    <span>Online (Analyzing Site Data)</span>
+                </div>
+                <button class="close-btn" onclick="toggleAIChat()">×</button>
+            </div>
+            
+            <div id="ai-chat-messages" class="ai-body">
+                </div>
+            
+            <div class="ai-footer">
+                <input type="text" id="ai-user-input" placeholder="Ask to summarize this page or ask a question..." onkeypress="handleAIPress(event)">
+                <button onclick="sendAIMessage()">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="ai.js"></script>
+</body>
+</html>
+
