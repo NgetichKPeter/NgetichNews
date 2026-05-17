@@ -1,6 +1,6 @@
 backend:
   name: ngetichnews
-  repo: netichnews
+  repo: ngetichkpeter.github.io/ngetichnews
   branch: main # Change to master if your branch is named master
 
 media_folder: "assets/images" # Where your uploaded photos will save
